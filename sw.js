@@ -1,5 +1,5 @@
 // EATED service worker: app disponible sin internet. Cambia VERSION al publicar cambios.
-const VERSION = "eated-v1.0.0";
+const VERSION = "eated-v1.8.0";
 const SHELL = ["./", "index.html", "styles.css", "js/app.js", "js/foods.js", "manifest.webmanifest", "icons/icon-192.png", "icons/apple-touch-icon.png", "vendor/zxing-browser.min.js"];
 self.addEventListener("install", e => { e.waitUntil(caches.open(VERSION).then(c => c.addAll(SHELL)).then(() => self.skipWaiting())); });
 self.addEventListener("activate", e => {
